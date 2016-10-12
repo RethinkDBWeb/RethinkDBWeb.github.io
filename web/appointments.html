@@ -33,7 +33,9 @@ function getUrlVars() {
     return vars;
   }
 
-var socket = io.connect('http://127.0.0.1:8090');
+// var socket = io.connect('http://127.0.0.1:8090');
+var socket = io.connect('https://rethinkdbweb.herokuapp.com');
+
 
 socket.on("doctors", function(data) {
   console.log(data);
