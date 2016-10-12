@@ -1,0 +1,19 @@
+{
+  "name": "rethinkdbweb",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RethinkDBWeb/RethinkDBWeb.github.io"
+  },
+  "dependencies": {
+    "express": "4.14.0",
+    "rethinkdb": "2.3.3",
+    "socket.io": "1.5.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "node main.js"
+  }
+}
