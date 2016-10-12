@@ -2,8 +2,10 @@ var r = require('rethinkdb');
 var sockio = require("socket.io");
 var app = require("express")();
 
-var io = sockio.listen(app.listen(8090), {log: false});
-console.log("App listening on port 8090");
+var port = process.env.PORT || 8090
+
+var io = sockio.listen(app.listen(port), {log: false});
+console.log("App listening on port " + port);
 
 var dbConfig = {
     host: 'rethinkdb.southcentralus.cloudapp.azure.com',
